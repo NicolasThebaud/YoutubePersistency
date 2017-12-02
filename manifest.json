@@ -1,0 +1,16 @@
+{
+  //EXTENSION INFOS
+  "manifest_version": 2,
+  "name": "persistent  player",
+  "version": "0.1.0",
+  "description": "Allow the user to persist the youtube player between pages",
+  //SCRIPT INJECTION
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["playerPersist.css"],
+      "js": ["playerPersist.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

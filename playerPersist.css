@@ -1,0 +1,22 @@
+#yt-persist {
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  border: 3px solid #ddd;
+  border-radius: 25%;
+  padding: 8px 10px;
+  color: red;
+  background-color: #ddd;
+  opacity: .7;
+}
+
+.yt-persist-player {
+  z-index: 999999;
+  transform: scale(0.7);
+  transform-origin: bottom right;
+  position: fixed !important;
+  bottom: 1vw !important;
+  right: 1vw !important;
+  float: right;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

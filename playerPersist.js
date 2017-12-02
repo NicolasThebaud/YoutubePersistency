@@ -46,7 +46,12 @@ const injectPersistencyTrigger = () => {
 const persistPlayer = () => {
   logger.log('info', 'persisting player...')
   const persistentPlayer = document.createElement('iframe')
-  persistentPlayer.src = location.href //TODO
+  persistentPlayer.src = formatLink(location.href)
   persistentPlayer.className = 'yt-persist-player'
   document.querySelector('body').appendChild(persistentPlayer)
 }
+
+const formatLink = (url) => url
+  .replace(/watch\?v\=/i, 'embed/')
+  // .replace(/&t(\=(?:\d+m)?\d+s)/i, (w, a) => `&start${a}`)
+  + '?autoplay=1'

@@ -7,7 +7,7 @@
   //SCRIPT INJECTION
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": ["https://www.youtube.com/watch*"],
       "css": ["playerPersist.css"],
       "js": ["playerPersist.js"],
       "run_at": "document_end"

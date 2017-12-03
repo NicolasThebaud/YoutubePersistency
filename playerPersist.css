@@ -1,6 +1,8 @@
-#yt-persist {
+#yt-persist-trigger {
   position: absolute;
-  top: 0;
+  z-index: 1000001;
+  top: auto;
+  left: auto;
   margin: 5px;
   border: 3px solid #ddd;
   border-radius: 25%;
@@ -10,9 +12,14 @@
   opacity: .7;
 }
 
+#yt-persist-mock {
+  transition: all 250ms ease-in;
+  transform: scale(1);
+}
+
 .yt-persist-player {
-  z-index: 999999;
-  transform: scale(0.7);
+  z-index: 1000000;
+  transform: scale(0.65) !important;
   transform-origin: bottom right;
   position: fixed !important;
   bottom: 1vw !important;
